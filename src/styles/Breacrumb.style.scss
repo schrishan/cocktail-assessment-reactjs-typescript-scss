@@ -1,0 +1,12 @@
+@import 'common.style';
+.bcrumb-nav-itm{
+    a,i{
+    color: $secondery-color;
+    }
+    i{
+        font-size: 0.85rem;
+    }
+}
+.bcrumb-itm-title{
+    color: $primary-color;
+}

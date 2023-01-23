@@ -1,0 +1,41 @@
+@import 'variables';
+
+
+.m-auto{
+    margin: auto;
+}
+.pos-r{
+    position: relative;
+}
+.container{
+    max-width: 90%;
+
+}
+@media screen and (min-width:576px){
+    .container-sm{
+        max-width: $sm;
+    }
+}
+@media screen and (min-width:768px){
+    .container-md{
+        max-width: $md;
+    }
+}
+
+@media screen and (min-width:992px){
+    .container-lg{
+        max-width: $lg;
+    }
+}
+
+@media screen and (min-width:1200px){
+    .container-xl{
+        max-width: $xl;
+    }
+}
+
+@media screen and (min-width:1400px){
+    .container-xxl{
+        max-width: $xxl;
+    }
+}

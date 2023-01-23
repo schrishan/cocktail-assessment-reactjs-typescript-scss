@@ -1,0 +1,45 @@
+@import "common.style";
+.pg-home {
+  .top-hero-section {
+    background-image: url(https://images.unsplash.com/photo-1438522014717-d7ce32b9bab9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1469&q=80);
+  }
+
+  .random-itm-wrp {
+    margin: 1rem 0 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    .cocktail-itm {
+      margin: 0.5rem;
+    }
+  }
+  .section-items-holder {
+    margin: 2rem auto 0;
+  }
+  .my-favourites-itm-wrp {
+    min-height: 10rem;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    &.no-itms {
+      align-items: center;
+      justify-content: center;
+    }
+    h3 {
+      color: $sub-color2;
+    }
+    .cocktail-itm {
+      margin: 0.5rem;
+    }
+  }
+  .search-box {
+    margin: auto;
+  }
+  .section-title-wrp {
+    span {
+      white-space: nowrap;
+    }
+  }
+}

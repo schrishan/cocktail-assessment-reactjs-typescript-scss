@@ -1,0 +1,130 @@
+@import "common.style";
+
+.top-content-section {
+  .pg-title {
+    line-height: 1;
+    margin: 1.5rem 0 0;
+    color: $secondery-color;
+    text-shadow: none;
+    text-align: center;
+  }
+}
+.items-holder {
+  min-height: 75vh;
+  padding: 1rem 0 0;
+}
+.pg-search {
+  .form-control {
+    display: block;
+    width: 100%;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: $secondery-color;
+    background-color: $sub-color4;
+    background-clip: padding-box;
+    border: 0.0625rem solid $sub-color2;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 0.375rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  }
+  .search-btn {
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 1.5rem;
+    padding: 0.15rem 0.5rem;
+    box-sizing: border-box;
+    color: $primary-color;
+    cursor: pointer;
+  }
+  .search-box {
+    margin: auto;
+    width: 100%;
+    .btn-alert-txt {
+      display: block;
+      text-align: center;
+      font-size: 0.85rem;
+      color: $sub-color2;
+    }
+  }
+}
+.fillter-wrp {
+  display: block;
+  text-align: left;
+  padding: 0.5rem;
+  margin: 1.5rem 0 2rem;
+  overflow-x: auto;
+  white-space: nowrap;
+  background-color: $sub-color3;
+  .filter-itm {
+    display: inline-block;
+    padding: 0.5rem 1.5rem;
+    background-color: $sub-color4;
+    border: 0.0625rem solid $primary-color;
+    color: $primary-color;
+    border-radius: 5px;
+    margin: 0.5rem;
+    white-space: nowrap;
+    transition: all 0.65s ease-in-out;
+    cursor: pointer;
+    &.active {
+      background-color: $primary-color;
+      color: $sub-color4;
+    }
+    :hover {
+      opacity: 0.75;
+    }
+  }
+}
+.no-result-wrp {
+  text-align: center;
+  min-height: 65vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media screen and (min-width: 768px) {
+  .top-content-section {
+    .pg-title {
+      font-size: 3.5rem;
+    }
+  }
+
+  .pg-search {
+    .search-box {
+      margin: auto;
+      width: 350px;
+      .btn-alert-txt {
+        font-size: 0.85rem;
+        color: $sub-color2;
+        display: block;
+        text-align: center;
+      }
+    }
+    .items-holder {
+      padding: 1.5rem 0 0;
+    }
+    .cocktail-itm {
+      margin: 0.5rem;
+    }
+  }
+  .fillter-wrp {
+    display: flex;
+    text-align: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    background-color: $sub-color3;
+    padding: 0.5rem;
+    margin: 1.5rem 0 2rem;
+  }
+  .result-wrp {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+}
