@@ -10,7 +10,7 @@ const root = ReactDOM.createRoot(
 );
 root.render(
   <React.StrictMode>
-    <BrowserRouter basename="/sadith/cocktails/">
+    <BrowserRouter basename="/sadith/projects/cocktails/">
     <AppProvider>
     <App />
     </AppProvider>
